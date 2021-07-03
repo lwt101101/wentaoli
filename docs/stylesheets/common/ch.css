@@ -1,0 +1,59 @@
+:root {
+  --button-text: 1.4rem "Noto Sans SC", sans-serif;
+  --caption: 1rem/1.25 "Noto Sans SC", sans-serif;
+  --h1-home: 700 3.06rem "Noto Sans SC", sans-serif;
+  --h1-others: 700 4.75rem "Noto Sans SC", sans-serif;
+  --h2: 700 2.44rem "Noto Sans SC", sans-serif;
+  --h3: 1.94rem "Noto Sans SC", sans-serif;
+  --h4: 1.31rem "Noto Sans SC", sans-serif;
+  --bullet-points: 1.19rem "Noto Sans SC", sans-serif;
+  --p: 1.19rem/1.37 "Noto Sans SC", sans-serif;
+  --sub-text: 1.1rem "Noto Sans SC", sans-serif;
+  --footer-title: 2.2rem "Noto Sans SC", sans-serif;
+  --footer-text: 1rem/1.88 "Noto Sans SC", sans-serif;
+  --logo-text: 1.88rem "Noto Sans SC", sans-serif;
+  --nav-anchor: 1rem "Noto Sans SC", sans-serif;
+  --chinese: 700 1rem "Merriweather", sans-serif;
+  --credits: 0.875rem "Noto Sans SC", sans-serif;
+  --abstract: 1.31rem "Noto Sans SC", sans-serif;
+}
+
+.facts {
+  grid-template-columns: 3fr 2fr;
+  padding: 3rem 1rem;
+}
+
+.education__list {
+  text-align: center;
+}
+
+.education__title,
+.interests__title {
+  margin: 1rem auto;
+}
+
+@media (max-width: 800px) {
+  .menu__button {
+    position: absolute;
+    right: 5px;
+    top: 1.5rem;
+  }
+
+  .hamburger {
+    top: 1.6rem;
+  }
+
+  .logo {
+    padding-bottom: 0.6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu__button {
+    top: 1.2rem;
+  }
+
+  .hamburger {
+    top: 1.3rem;
+  }
+}

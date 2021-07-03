@@ -1,0 +1,170 @@
+.menu__item:nth-child(2) > .menu__anchor {
+  color: var(--sky-blue);
+}
+
+.research-main {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.background-deco {
+  position: absolute;
+  font-size: 229px;
+  color: #f6f7f8c7;
+  z-index: -1;
+  transform: rotate(90deg);
+  top: 40rem;
+  right: -300px;
+  overflow: hidden;
+  line-height: 1;
+}
+
+.page-title {
+  font: var(--h1-others);
+  color: var(--dark-blue);
+  margin: 6rem 0 7rem 0;
+}
+
+.published-papers,
+.ongoing-research {
+  margin-bottom: 6rem;
+}
+
+.published-papers__title,
+.ongoing-research__title {
+  text-align: center;
+  font: var(--h2);
+  color: var(--black);
+  margin-bottom: 4rem;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv-button {
+  background: var(--dark-blue);
+  color: var(--white);
+  font: var(--button-text);
+  text-align: center;
+  white-space: nowrap;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-top: -4rem;
+}
+
+.cv-button .background-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: var(--sky-blue);
+  z-index: -1;
+}
+
+.cv-button:hover .background-wrapper,
+.cv-button:focus-visible .background-wrapper {
+  animation: fill 0.25s both ease-in;
+}
+
+@keyframes fill {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.footer,
+.contact {
+  background: var(--off-white);
+}
+
+.footer {
+  margin-top: 5rem;
+}
+
+@media (max-width: 1550px) {
+  .background-deco {
+    display: none;
+  }
+
+  .research-main {
+    padding: 0 4rem;
+  }
+
+  .page-title {
+    margin: 5rem auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .ongoing-research {
+    margin-bottom: 7rem;
+  }
+
+  .footer {
+    margin-top: 4rem;
+  }
+
+  .published-papers__title,
+  .ongoing-research__title {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .published-papers,
+  .ongoing-research {
+    margin-bottom: 5rem;
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 4rem;
+    margin: 3rem auto;
+  }
+
+  .research-main {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 3.5rem;
+  }
+
+  .cv-button {
+    font-size: 1.2rem;
+    padding: 0.7rem 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .ongoing-research {
+    margin-bottom: 5rem;
+  }
+
+  .footer {
+    margin-top: 3rem;
+  }
+
+  .research-main {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .cv-button {
+    padding: 0.7rem 0.6rem;
+  }
+}

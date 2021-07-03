@@ -1,0 +1,66 @@
+.menu__item:nth-child(3) > .menu__anchor {
+  color: var(--sky-blue);
+}
+
+.teaching-main {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font: var(--h1-others);
+  color: var(--dark-blue);
+  margin: 6rem 0 7rem 0;
+}
+
+.footer {
+  margin-top: 7rem;
+}
+
+.footer,
+.contact {
+  background: var(--off-white);
+}
+
+@media (max-width: 1550px) {
+  .teaching-main {
+    padding: 0 4rem;
+  }
+
+  .page-title {
+    margin: 5rem auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    margin-top: 4rem;
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 4rem;
+    margin: 3rem auto;
+  }
+
+  .teaching-main {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 3.5rem;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    margin-top: 3rem;
+  }
+
+  .teaching-main {
+    padding: 0 1rem;
+  }
+}
